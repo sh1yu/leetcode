@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"github.com/sh1yu/assertion"
+)
 
 func climbStairs(n int) int {
 
@@ -17,5 +19,5 @@ func climbStairs(n int) int {
 }
 
 func main() {
-	fmt.Println(climbStairs(2))
+	assertion.Equals(2, climbStairs(2))
 }
